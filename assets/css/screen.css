@@ -22,5 +22,6 @@
 @import "misc/animations.css";
 @import "misc/dark.css";
 
+@import "blog/feed_wrapper_homepage.css";
 @import "blog/navigation_secondary.css";
 @import "site/footer.css";
