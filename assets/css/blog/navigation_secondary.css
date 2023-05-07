@@ -1,0 +1,15 @@
+.social {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.social-item {
+    margin: 0 4px;
+    color: var(--secondary-text-color);
+    line-height: 0;
+}
+
+.social-item .icon {
+    width: 24px;
+    height: 24px;
+}

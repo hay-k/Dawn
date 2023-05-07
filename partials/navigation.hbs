@@ -1,0 +1,17 @@
+{{#if isSecondary}}
+    <!-- Use secondary navigation for social links/icons -->
+    <div class="social">
+        {{#foreach navigation}}
+            <a class="social-item" href="{{url}}" rel="noopener noreferrer" target="_blank">
+                {{> (concat "icons/" slug "_square")}}
+            </a>
+        {{/foreach}}
+    </div>
+{{else}}
+    <!-- This is a copy from ghost preset template for main navigation (https://github.com/TryGhost/Ghost/blob/main/ghost/core/core/frontend/helpers/tpl/navigation.hbs) -->
+    <ul class="nav">
+        {{#foreach navigation}}
+        <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+{{/if}}
